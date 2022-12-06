@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale= .0">
+    <title>Sumit Shinde Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+           <nav>
+            <img src="https://th.bing.com/th/id/R.ae3aaac7de3c2af46e37468757af14f3?rik=Koluw%2br0fNi%2bCg&riu=http%3a%2f%2fpuebloweddings.com%2fcoloradobridalshow%2fsummitmusichall-logo.jpg&ehk=kMgb1jLqwFZydkUUR1IgpNDnSI0hfqpa7meLRdKbRbI%3d&risl=&pid=ImgRaw&r=0" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <!-- <li><a href="#">Sevices</a></li> -->
+                    <li><a href="#">Resume</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+           </nav>
+           <div class="header-text">
+            <p> Software Engineer </p>
+            <h1>Hi, I'm <span>Sumit</span><br>from Pune, India</h1>
+           </div>
+
+        </div>
+
+    </div>
+
+    <!-------------------about----------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                                                <div class="about-co1-1">
+                                                    <img src="C:\Users\91883\Desktop\SUMIT PORTFILO\images\Sumit Shinde Profile.png">
+
+                                                </div>
+                    <div class="about-co1-2">
+                        <h1 class="sub-title">About Me</h1>
+                                <p>As a beginner in the field of Information Technology, 
+                            I strive to associate myself with an organization 
+                            where I can utilize my skills in the best possible manner,
+                            which further gives me an opportunity to grow in my career
+                            journey while contributing to the development of the organization.</p>
+                            <div class="tab-titles">
+                                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                                <p class="tab-links"onclick="opentab('projects')">Projects </p>
+                                <p class="tab-links"onclick="opentab('qualification')">Qualification</p>
+                                <p class="tab-links"onclick="opentab('certification')">Certification</p>
+ 
+                            </div>
+                                <div class="tab-contents active-tab" id="skills">
+                                    <ul>
+
+                                    <li><span>Software Developer</span><br>Software development using programing languages <br>
+                                        like Java, C++, JavaScript, Html & Css</li>
+                                    <li><span>Web developement</span><br>web app developement</li>
+                                    <li><span>App developement</span><br>Building Android apps</li>
+                                    </ul>
+                                </div>
+
+                    
+                                        <div class="tab-contents" id="projects">
+                                            <ul>
+
+                                            <li><span>Student Performance Prediction</span><br>It is a Machine Learning based web application.</li>
+                                            <li><span>Anti-Addict Launcher</span><br>It is a Android based application.</li>
+                                            
+                                            </ul>
+                                        </div>
+                                <div class="tab-contents" id="qualification">
+                                    <ul>
+
+                                    <li><span>Bachloer's Of Computer Engineering</span><br>from Trinity College Of Engineering,Pune in 2022 <br>with 8.61/10 CGPA.</li>
+                                    <li><span>Diploma in Computer Engineering</span><br>from Jaywantrao Sawant polytechnic Hadpsar,Pune in 2019 <br>with 72.50/100 Percentage. </li>
+                                    <li><span>Secondary School Certificate</span><br>from New English School Phurusungi,Pune in 2016 <br>with 73.80/100 Percentage. </li>
+                                    </ul>
+                                </div>
+                                <div class="tab-contents" id="certification">
+                                    <ul>
+
+                                    <li><span>"Program In Website development" </span><br>through NIIT foundation.</li>
+                                    <li><span>"Google Drive Clone using Html & Materialize CSS"</span><br>through Developer Student Clubs./li>
+                                    
+                                    </ul>
+                                </div>
+
+                    </div>
+                </div>
+            
+        </div>
+
+    </div>
+    <!-------------------contact----------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="subt-itle">Contact Me</h1>
+                    <p>sumitshinde8771@gmail.com</p>
+                    <p>7030810201</p>
+                    <div class="social-icons">
+                        <a href="https://th.bing.com/th/id/OIP.UZgf2FRV9lByxCePXhNO9wHaE8?w=259&h=180&c=7&r=0&o=5&pid=1.7"><i class="facebook"></i></a>
+                        <a href="https://th.bing.com/th/id/R.1c81a83612fbdd58a288b058ad04841e?rik=DZhkgnpER0YViQ&riu=http%3a%2f%2fpngimg.com%2fuploads%2flinkedIn%2flinkedIn_PNG8.png&ehk=4bFzIDABrAypqOis7809R99fdbUW93GC4XfvnNxZfdA%3d&risl=&pid=ImgRaw&r=0"><i class="linkedin"></i></a>
+                        <a href="https://th.bing.com/th/id/OIP.ovN_xdPN9uFd0x5aFgULkwAAAA?pid=ImgDet&w=300&h=292&rs=1"><i class="github"></i></a>
+                        <a href="https://th.bing.com/th/id/OIP.mXsfsI-MOaQPYbJVRUKRZQHaHa?pid=ImgDet&rs= "><i class="instagram"></i></a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname)
+    {
+        
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+</body>
+</html>
