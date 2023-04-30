@@ -249,6 +249,11 @@ form btn2{
 .btn88{
     height : 10 px;
     width : 30px
+}
+.btn89{
+    height :3 px;
+    width : 5 px;
+}
 /*---------------------------------------------------css for small screen ----------------------*/
 
 @media only screen and (max-with:600px){
