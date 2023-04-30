@@ -246,7 +246,9 @@ form btn2{
     margin-top: 20px;
     cursor: pointer;
 }
-
+.btn88{
+    height : 10 px;
+    width : 30px
 /*---------------------------------------------------css for small screen ----------------------*/
 
 @media only screen and (max-with:600px){
