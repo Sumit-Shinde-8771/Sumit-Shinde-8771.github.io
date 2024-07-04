@@ -78,6 +78,35 @@ nav ul li a:hover::after{
 .header-text h1 span{
     color: #ff004f;
 }
+.project-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.project-list li {
+    background: #1a1a1a;
+    border: 1px solid #333;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.project-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ff004f;
+    display: block;
+}
+
+.project-info {
+    font-size: 16px;
+    color: #ababab;
+    display: none; /* Ensure this is set to none */
+    margin-top: 10px;
+}
+
 /*-------------------about----------------------- */
 
 #about
@@ -258,16 +287,124 @@ form btn2{
 }
 /*---------------------------------------------------css for small screen ----------------------*/
 
-@media only screen and (max-with:600px){
-    #header{
+@media only screen and (max-width: 600px) {
+    #header {
         background-image: url(https://i.pinimg.com/736x/39/28/50/3928505a20492de02d43dc3600d7fe33.jpg);
     }
-    .header-text{
+
+    .header-text {
         margin-top: 100%;
         font-size: 16px;
     }
-    .header-text h1{
-        font-size: 30px;
 
+    .header-text h1 {
+        font-size: 30px;
     }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .row {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .about-co1-1,
+    .about-co1-2 {
+        flex-basis: 100%;
+        padding: 10px;
+    }
+
+    .tab-titles {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tab-links {
+        margin: 0 0 10px 0;
+    }
+
+    .contact-left,
+    .contact-right {
+        flex-basis: 100%;
+        padding: 10px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        padding: 10px 5%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .header-text {
+        margin-top: 50%;
+    }
+
+    .header-text h1 {
+        font-size: 40px;
+    }
+
+    .row {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .about-co1-1,
+    .about-co1-2 {
+        flex-basis: 100%;
+        padding: 10px;
+    }
+
+    .tab-titles {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tab-links {
+        margin: 0 0 10px 0;
+    }
+
+    .contact-left,
+    .contact-right {
+        flex-basis: 100%;
+        padding: 10px;
+    }
+}
+
+/* Styling for the download CV button */
+.btn-download {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: black; /* Green background */
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-download:hover {
+    background-color: #c73566; /* Darker green on hover */
+}
+
+/* Style for the download link */
+.download-link {
+    text-decoration: none;
 }
