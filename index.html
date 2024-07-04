@@ -14,11 +14,11 @@
            <nav>
             <img src="https://th.bing.com/th/id/R.ae3aaac7de3c2af46e37468757af14f3?rik=Koluw%2br0fNi%2bCg&riu=http%3a%2f%2fpuebloweddings.com%2fcoloradobridalshow%2fsummitmusichall-logo.jpg&ehk=kMgb1jLqwFZydkUUR1IgpNDnSI0hfqpa7meLRdKbRbI%3d&risl=&pid=ImgRaw&r=0" class="logo">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
                     <!-- <li><a href="#">Sevices</a></li> -->
                     <!-- <li><a href="#">Resume</a></li> -->
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
            </nav>
            <div class="header-text">
@@ -50,27 +50,73 @@
                                 <p class="tab-links"onclick="opentab('projects')">Projects </p>
                                 <p class="tab-links"onclick="opentab('qualification')">Qualification</p>
                                 <p class="tab-links"onclick="opentab('certification')">Certification</p>
+                                <p class="tab-links"onclick="opentab('WORK Experience')">WORK Experience</p>
  
                             </div>
                                 <div class="tab-contents active-tab" id="skills">
                                     <ul>
 
                                     <li><span>Software Developer</span><br>Software development using programing languages <br>
-                                        like Java, C++, JavaScript, Html & Css</li>
+                                        like Java, C++, JavaScript, Html & Css,For Databses like SQL,PLSQL, Frameworks konwn like SpringBoot,Angular,React,Hibernate,PowerBi .</li>
                                     <li><span>Web developement</span><br>web app developement</li>
                                     <li><span>App developement</span><br>Building Android apps</li>
                                     </ul>
                                 </div>
 
                     
-                                        <div class="tab-contents" id="projects">
-                                            <ul>
-
-                                            <li><span>Student Performance Prediction</span><br>It is a Machine Learning based web application.</li>
-                                            <li><span>Anti-Addict Launcher</span><br>It is a Android based application.</li>
+                                <div class="tab-contents" id="projects">
+                                    <ul class="project-list">
+                                        
+                                        <li>
+                                            <span class="project-title" onclick="toggleProjectInfo(this)">Hospital Management System- Java Spring Boot</span>
+                                            <div class="project-info">
+                                                <p><strong>Description:</strong> Designed and developed a comprehensive hospital management system using Spring Boot. The system includes modules for patient management, appointment scheduling, and receptionist functions.</p>
+                                                <p><strong>Technologies Used:</strong> Java, Spring Boot, Thymeleaf templates, Hibernate for database interaction.</p>
+                                                <p><strong>Features:</strong></p>
+                                                <ul>
+                                                    <li>Patient Management: CRUD operations for patient records.</li>
+                                                    <li>Appointment Scheduling: Allows patients to request and manage appointments.</li>
+                                                    <li>Receptionist Functions: Approve or reject appointment requests, manage patient data.</li>
+                                                </ul>
+                                                <p><strong>Skills:</strong> Java programming, Spring Boot framework, MVC architecture, database management with Hibernate, UI/UX design with Thymeleaf templates.</p>
+                                                <p><strong>Collaboration:</strong> Worked in a team to ensure functionality met user needs and system requirements, emphasizing teamwork and effective communication.</p>
+                                            </div>
+                                        </li>
+                                        
+                                        <li>
+                                            <span class="project-title" onclick="toggleProjectInfo(this)">Student Database Management System - Java Spring Boot</span>
+                                            <div class="project-info">
+                                                <p><strong>Technologies:</strong> Spring Boot, Spring MVC, Spring Data JPA, MySQL, Hibernate, RESTful APIs, Swagger, JUnit, Mockito.</p>
+                                                <p><strong>Description:</strong> Developed a Student Database Management System using Java Spring Boot. Implemented RESTful APIs (@GetMapping, @PostMapping, @PutMapping, @DeleteMapping) for CRUD operations. Integrated MySQL with Spring Data JPA and Hibernate for data persistence. Implemented robust data validation (@Valid) and error handling (@ControllerAdvice, @ExceptionHandler) mechanisms.</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <span class="project-title" onclick="toggleProjectInfo(this)">Student Performance Prediction</span>
+                                            <div class="project-info">
+                                                <p><strong>Description:</strong> This web-based application is designed to evaluate students' capabilities in various subjects using classification tasks. It employs Support Vector Machine, Decision Tree, and Naïve Bayes methods for data classification. The application predicts students' performance in exams and other activities based on these methods.</p>
+                                                <p><strong>Technologies:</strong>Python, Machine Learning libraries.</p>
+                                              </div>
                                             
-                                            </ul>
-                                        </div>
+                                        </li>
+                                        <li>
+                                            <span class="project-title" onclick="toggleProjectInfo(this)">Anti-Addict Launcher</span>
+                                            <div class="project-info">
+                                                <p><strong>Description:</strong> This Android-based application is designed for parental control over teenage smartphone usage. It aims to mitigate smartphone addiction among teenagers by providing comprehensive parental controls.</p>
+                                                <p><strong>Features:</strong></p>
+                                                <ul>
+                                                    <li>Full access control via PIN set during registration.</li>
+                                                    <li>Parental monitoring and management of smartphone usage.</li>
+                                                    <li>Restrictions on app usage and screen time.</li>
+                                                    <li>Notification alerts for excessive usage.</li>
+                                                </ul>
+                                                <p><strong>Technologies:</strong> Android OS, Java, Android SDK, Firebase for backend operations.</p>
+                                
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                
+                                
                                 <div class="tab-contents" id="qualification">
                                     <ul>
 
@@ -79,14 +125,36 @@
                                     <li><span>Secondary School Certificate</span><br>from New English School Phurusungi,Pune in 2016 <br>with 73.80/100 Percentage. </li>
                                     </ul>
                                 </div>
+
+
+
                                 <div class="tab-contents" id="certification">
                                     <ul>
-
+                                    <li><span>“Full Stack Developer - Java Plus” </span><br>from Seed Infotech through NSDC.</li>
                                     <li><span>"Program In Website development" </span><br>through NIIT foundation.</li>
                                     <li><span>"Google Drive Clone using Html & Materialize CSS"</span><br>through Developer Student Clubs.</li>
                                     
                                     </ul>
                                 </div>
+
+
+
+                                
+                                <div class="tab-contents" id="WORK Experience">
+                                    <h2>JAVA DEVELOPER INTERN | HulkHire Tech, Hyderabad</h2>
+                                    <p><strong>Duration:</strong> 06/05/2024 – 28/07/2024</p>
+                                    <ul>
+                                        <li>Developed a secure, modular payment system using Spring Boot with microservices on AWS.</li>
+                                        <li>Integrated Trustly APIs, implemented Spring Security (HmacSHA256, RSA), and built validation and error handling frameworks.</li>
+                                        <li>Utilized Redis for caching, ActiveMQ for asynchronous communication, and Spring JDBC for MySQL interaction.</li>
+                                        <li>Achieved STAR Performer for on-time task delivery and team support.</li>
+                                        <li>Tech stack includes Java, Spring Boot, RESTful APIs, AWS, MySQL, Git, Maven, JUnit, and Agile methodologies.</li>
+                                    </ul>
+                                </div>
+
+
+
+                                
 
                     </div>
                 </div>
@@ -100,8 +168,8 @@
             <div class="row">
                 <div class="contact-left">
                     <h1 class="subt-itle">Contact Me</h1>
-                    <p><a href=""><img id="Email" src="https://cdn-icons-png.flaticon.com/128/646/646135.png" alt=""></a>  sumitshinde8771@gmail.com</p>
-                    <p><a href=""><img id="Phonecall" src="https://cdn-icons-png.flaticon.com/128/3059/3059502.png" alt=""></a>  7030810201</p>
+                    <p><a href="mailto:sumitshinde8771@gmail.com"><img id="Email" src="https://cdn-icons-png.flaticon.com/128/646/646135.png" alt=""></a>  sumitshinde8771@gmail.com</p>
+                    <p><a href="tel:7030810201"><img id="Phonecall" src="https://cdn-icons-png.flaticon.com/128/3059/3059502.png" alt=""></a>  7030810201</p>
 
                     
                        
@@ -114,20 +182,16 @@
                         
                     </div>
                    <a href="https://drive.google.com/file/d/1G8RAeNMKsJm2HVVcucgMTpANfY8U5VUH/view?usp=drive_link">
-            <input type="button" value="Download CV" id="btn89">
+                    <button class="btn-download">Download CV</button>
         </a>
                 </div>
-                <div class="contact-right">
-                    <form>
-                        <input type="text" name="Name" placeholder="your Name" required>
-                        <input type="email" name="email" placeholder="your Email" required>
-                        <input type="message" name="message" placeholder="your Message" required>
-                        <input type="submit" value="Submit" id="btn88">
+                <form id="contactForm">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Your Message" required></textarea>
+                    <input type="submit" value="Submit" id="btn88">
+                </form>
 
-                    </form>
-                    
-
-                </div>
 
             </div>
 
@@ -158,6 +222,47 @@
         event.currentTarget.classList.add("active-link");
         document.getElementById(tabname).classList.add("active-tab");
     }
+    function toggleProjectInfo(element) {
+    const info = element.nextElementSibling;
+    const isVisible = info.style.display === "block";
+
+    // Hide all project info sections
+    document.querySelectorAll('.project-info').forEach(project => {
+        project.style.display = 'none';
+    });
+
+    // Toggle the clicked project's info
+    if (!isVisible) {
+        info.style.display = "block";
+    }
+}
+document.getElementById("contactForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent default form submission
+
+    // Collect form data
+    const formData = new FormData(this);
+
+    // Send form data to server-side script
+    fetch("send_email.php", {
+        method: "POST",
+        body: formData
+    })
+    .then(response => {
+        if (response.ok) {
+            alert("Message sent successfully.");
+            this.reset(); // Clear form inputs on success
+        } else {
+            throw new Error("Error sending message.");
+        }
+    })
+    .catch(error => {
+        console.error("Error:", error);
+        alert("Error sending message. Please try again later.");
+    });
+});
+
+
+
 </script>
 </body>
 </html>
