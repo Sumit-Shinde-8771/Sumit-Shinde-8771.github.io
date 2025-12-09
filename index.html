@@ -1,268 +1,272 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale= .0">
-    <title>Sumit Shinde Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sumit Shinde — Portfolio</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <div id="header">
-        <div class="container">
-           <nav>
-            <img src="https://th.bing.com/th/id/R.ae3aaac7de3c2af46e37468757af14f3?rik=Koluw%2br0fNi%2bCg&riu=http%3a%2f%2fpuebloweddings.com%2fcoloradobridalshow%2fsummitmusichall-logo.jpg&ehk=kMgb1jLqwFZydkUUR1IgpNDnSI0hfqpa7meLRdKbRbI%3d&risl=&pid=ImgRaw&r=0" class="logo">
-                <ul>
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <!-- <li><a href="#">Sevices</a></li> -->
-                    <!-- <li><a href="#">Resume</a></li> -->
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-           </nav>
-           <div class="header-text">
-            <p> Software Engineer </p>
-            <h1>Hi, I'm <span>Sumit</span><br>from Pune, India</h1>
-           </div>
+  <header id="header" class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#header" aria-label="Sumit Shinde homepage">Sumit Shinde</a>
 
-        </div>
+      <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Toggle navigation">
+        <span class="hamburger">☰</span>
+      </button>
 
+      <nav id="primaryNav" class="primary-nav" role="navigation">
+        <ul>
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a class="btn-cv" href="https://drive.google.com/file/d/1G8RAeNMKsJm2HVVcucgMTpANfY8U5VUH/view?usp=drive_link" target="_blank" rel="noopener">Download CV</a></li>
+        </ul>
+      </nav>
     </div>
 
-    <!-------------------about----------------------->
-    <div id="about">
-        <div class="container">
-            <div class="row">
-                                                <div class="about-co1-1">
-                                                    <img src="Sumit Shinde Profile.png">
+    <div class="container header-hero">
+      <div class="header-text">
+        <p class="role">Software Engineer</p>
+        <h1>Hi, I'm <span class="name-highlight">Sumit</span><br>from Pune, India</h1>
+        <p class="hero-desc">Java | Spring Boot | Microservices | Backend Systems — I build reliable and scalable server-side applications.</p>
+      </div>
+      <div class="hero-image">
+        <img src="Sumit Shinde Profile.png" alt="Sumit Shinde profile" loading="lazy">
+      </div>
+    </div>
+  </header>
 
-                                                </div>
-                    <div class="about-co1-2">
-                        <h1 class="sub-title">About Me</h1>
-                                <p>As a beginner in the field of Information Technology, 
-                            I strive to associate myself with an organization 
-                            where I can utilize my skills in the best possible manner,
-                            which further gives me an opportunity to grow in my career
-                            journey while contributing to the development of the organization.</p>
-                            <div class="tab-titles">
-                                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                                <p class="tab-links"onclick="opentab('projects')">Projects </p>
-                                <p class="tab-links"onclick="opentab('qualification')">Qualification</p>
-                                <p class="tab-links"onclick="opentab('certification')">Certification</p>
-                                <p class="tab-links"onclick="opentab('WORK Experience')">WORK Experience</p>
- 
-                            </div>
-                                <div class="tab-contents active-tab" id="skills">
-                                    <ul>
-
-                                    <li><span>Software Developer</span><br>Software development using programing languages <br>
-                                        like Java, C++, JavaScript, Html & Css,For Databses like SQL,PLSQL, Frameworks konwn like SpringBoot,Angular,React,Hibernate,PowerBi .</li>
-                                    <li><span>Web developement</span><br>web app developement</li>
-                                    <li><span>App developement</span><br>Building Android apps</li>
-                                    </ul>
-                                </div>
-
-                    
-                                <div class="tab-contents" id="projects">
-                                    <ul class="project-list">
-                                        
-                                        <li>
-                                            <span class="project-title" onclick="toggleProjectInfo(this)">Hospital Management System- Java Spring Boot</span>
-                                            <div class="project-info">
-                                                <p><strong>Description:</strong> Designed and developed a comprehensive hospital management system using Spring Boot. The system includes modules for patient management, appointment scheduling, and receptionist functions.</p>
-                                                <p><strong>Technologies Used:</strong> Java, Spring Boot, Thymeleaf templates, Hibernate for database interaction.</p>
-                                                <p><strong>Features:</strong></p>
-                                                <ul>
-                                                    <li>Patient Management: CRUD operations for patient records.</li>
-                                                    <li>Appointment Scheduling: Allows patients to request and manage appointments.</li>
-                                                    <li>Receptionist Functions: Approve or reject appointment requests, manage patient data.</li>
-                                                </ul>
-                                                <p><strong>Skills:</strong> Java programming, Spring Boot framework, MVC architecture, database management with Hibernate, UI/UX design with Thymeleaf templates.</p>
-                                                <p><strong>Collaboration:</strong> Worked in a team to ensure functionality met user needs and system requirements, emphasizing teamwork and effective communication.</p>
-                                            </div>
-                                        </li>
-                                        
-                                        <li>
-                                            <span class="project-title" onclick="toggleProjectInfo(this)">Student Database Management System - Java Spring Boot</span>
-                                            <div class="project-info">
-                                                <p><strong>Technologies:</strong> Spring Boot, Spring MVC, Spring Data JPA, MySQL, Hibernate, RESTful APIs, Swagger, JUnit, Mockito.</p>
-                                                <p><strong>Description:</strong> Developed a Student Database Management System using Java Spring Boot. Implemented RESTful APIs (@GetMapping, @PostMapping, @PutMapping, @DeleteMapping) for CRUD operations. Integrated MySQL with Spring Data JPA and Hibernate for data persistence. Implemented robust data validation (@Valid) and error handling (@ControllerAdvice, @ExceptionHandler) mechanisms.</p>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <span class="project-title" onclick="toggleProjectInfo(this)">Student Performance Prediction</span>
-                                            <div class="project-info">
-                                                <p><strong>Description:</strong> This web-based application is designed to evaluate students' capabilities in various subjects using classification tasks. It employs Support Vector Machine, Decision Tree, and Naïve Bayes methods for data classification. The application predicts students' performance in exams and other activities based on these methods.</p>
-                                                <p><strong>Technologies:</strong>Python, Machine Learning libraries.</p>
-                                              </div>
-                                            
-                                        </li>
-                                        <li>
-                                            <span class="project-title" onclick="toggleProjectInfo(this)">Anti-Addict Launcher</span>
-                                            <div class="project-info">
-                                                <p><strong>Description:</strong> This Android-based application is designed for parental control over teenage smartphone usage. It aims to mitigate smartphone addiction among teenagers by providing comprehensive parental controls.</p>
-                                                <p><strong>Features:</strong></p>
-                                                <ul>
-                                                    <li>Full access control via PIN set during registration.</li>
-                                                    <li>Parental monitoring and management of smartphone usage.</li>
-                                                    <li>Restrictions on app usage and screen time.</li>
-                                                    <li>Notification alerts for excessive usage.</li>
-                                                </ul>
-                                                <p><strong>Technologies:</strong> Android OS, Java, Android SDK, Firebase for backend operations.</p>
-                                
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                                
-                                
-                                <div class="tab-contents" id="qualification">
-                                    <ul>
-
-                                    <li><span>Bachloer's Of Computer Engineering</span><br>from Trinity College Of Engineering,Pune in 2022 <br>with 8.61/10 CGPA.</li>
-                                    <li><span>Diploma in Computer Engineering</span><br>from Jaywantrao Sawant polytechnic Hadpsar,Pune in 2019 <br>with 72.50/100 Percentage. </li>
-                                    <li><span>Secondary School Certificate</span><br>from New English School Phurusungi,Pune in 2016 <br>with 73.80/100 Percentage. </li>
-                                    </ul>
-                                </div>
-
-
-
-                                <div class="tab-contents" id="certification">
-                                    <ul>
-                                    <li><span>“Full Stack Developer - Java Plus” </span><br>from Seed Infotech through NSDC.</li>
-                                    <li><span>"Program In Website development" </span><br>through NIIT foundation.</li>
-                                    <li><span>"Google Drive Clone using Html & Materialize CSS"</span><br>through Developer Student Clubs.</li>
-                                    
-                                    </ul>
-                                </div>
-
-
-
-                                
-                                <div class="tab-contents" id="WORK Experience">
-                                    <h2>JAVA DEVELOPER INTERN | HulkHire Tech, Hyderabad</h2>
-                                    <p><strong>Duration:</strong> 06/05/2024 – 28/07/2024</p>
-                                    <ul>
-                                        <li>Developed a secure, modular payment system using Spring Boot with microservices on AWS.</li>
-                                        <li>Integrated Trustly APIs, implemented Spring Security (HmacSHA256, RSA), and built validation and error handling frameworks.</li>
-                                        <li>Utilized Redis for caching, ActiveMQ for asynchronous communication, and Spring JDBC for MySQL interaction.</li>
-                                        <li>Achieved STAR Performer for on-time task delivery and team support.</li>
-                                        <li>Tech stack includes Java, Spring Boot, RESTful APIs, AWS, MySQL, Git, Maven, JUnit, and Agile methodologies.</li>
-                                    </ul>
-                                </div>
-
-
-
-                                
-
-                    </div>
-                </div>
-            
+  <main>
+    <!-- ABOUT -->
+    <section id="about" class="section about">
+      <div class="container about-grid">
+        <div class="about-left">
+          <img src="Sumit Shinde Profile.png" alt="Sumit Shinde" loading="lazy" class="profile-img">
         </div>
 
-    </div>
-    <!-------------------contact----------------------->
-    <div id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="contact-left">
-                    <h1 class="subt-itle">Contact Me</h1>
-                    <p><a href="mailto:sumitshinde8771@gmail.com"><img id="Email" src="https://cdn-icons-png.flaticon.com/128/646/646135.png" alt=""></a>  sumitshinde8771@gmail.com</p>
-                    <p><a href="tel:7030810201"><img id="Phonecall" src="https://cdn-icons-png.flaticon.com/128/3059/3059502.png" alt=""></a>  7030810201 / 7218307306</p>
+        <div class="about-right">
+          <h2>About Me</h2>
+          <p>
+            As a beginner (and rapidly growing) Software Engineer, I focus on building backend systems using Java and Spring Boot.
+            I enjoy solving performance and integration problems, and I have hands-on experience in trade finance systems, microservices and relational databases.
+          </p>
 
-                    
-                       
-                    <div class="social-icons">
-                        <a href="https://www.linkedin.com/in/sumit-shinde-713925222" target="_blank"><img id="social-icons1" src="https://cdn-icons-png.flaticon.com/512/61/61109.png" alt=""></a>
-                        <a href="https://github.com/Sumit-Shinde-8771/Sumit-Shinde-8771.github.io" target="_blank"><img id="social-icons2" src="https://cdn-icons-png.flaticon.com/512/25/25657.png" alt=""></a>
-                        
-                        
-                        
-                        
-                    </div>
-                   <a href="https://drive.google.com/file/d/1G8RAeNMKsJm2HVVcucgMTpANfY8U5VUH/view?usp=drive_link">
-                    <button class="btn-download">Download CV</button>
-        </a>
-                </div>
-                <form id="contactForm">
-                    <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="email" name="email" placeholder="Your Email" required>
-                    <textarea name="message" placeholder="Your Message" required></textarea>
-                    <input type="submit" value="Submit" id="btn88">
-                </form>
+          <div class="tabs" role="tablist" aria-label="About tabs">
+            <button class="tab-link active" data-target="skills" role="tab" aria-selected="true">Skills</button>
+            <button class="tab-link" data-target="projects" role="tab" aria-selected="false">Projects</button>
+            <button class="tab-link" data-target="qualification" role="tab" aria-selected="false">Qualification</button>
+            <button class="tab-link" data-target="certification" role="tab" aria-selected="false">Certification</button>
+            <button class="tab-link" data-target="work-experience" role="tab" aria-selected="false">Work</button>
+          </div>
 
-
+          <div class="tab-panels">
+            <div id="skills" class="tab-panel active" role="tabpanel">
+              <ul>
+                <li><strong>Software Development:</strong> Java, Spring Boot, Hibernate, REST APIs, Microservices</li>
+                <li><strong>Web:</strong> HTML, CSS, JavaScript, Angular, React basics</li>
+                <li><strong>Databases:</strong> MySQL, Oracle, PLSQL</li>
+                <li><strong>Other:</strong> Git, Maven, AWS basics, JUnit</li>
+              </ul>
             </div>
 
+            <div id="projects" class="tab-panel" role="tabpanel" hidden>
+              <ul class="project-list">
+                <li>
+                  <button class="project-title">Hospital Management System — Java Spring Boot</button>
+                  <div class="project-info" hidden>
+                    <p><strong>Tech:</strong> Java, Spring Boot, Thymeleaf, Hibernate</p>
+                    <p>Patient CRUD, appointment scheduling, receptionist workflows.</p>
+                  </div>
+                </li>
+
+                <li>
+                  <button class="project-title">Student Database Management System — Spring Boot</button>
+                  <div class="project-info" hidden>
+                    <p><strong>Tech:</strong> Spring Boot, Spring Data JPA, MySQL, REST</p>
+                    <p>CRUD APIs, validation, error handling, Swagger.</p>
+                  </div>
+                </li>
+
+                <li>
+                  <button class="project-title">Anti-Addict Launcher — Android</button>
+                  <div class="project-info" hidden>
+                    <p><strong>Tech:</strong> Android (Java), Firebase</p>
+                    <p>Parental control launcher with PIN and usage restrictions.</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div id="qualification" class="tab-panel" role="tabpanel" hidden>
+              <ul>
+                <li>Bachelor of Computer Engineering — Trinity College of Engineering, Pune (CGPA: 8.61)</li>
+                <li>Diploma in Computer Engineering — Jaywantrao Sawant Polytechnic (72.50%)</li>
+                <li>Secondary School Certificate — New English School (73.80%)</li>
+              </ul>
+            </div>
+
+            <div id="certification" class="tab-panel" role="tabpanel" hidden>
+              <ul>
+                <li>Full Stack Developer - Java Plus (Seed Infotech / NSDC)</li>
+                <li>Program in Website Development (NIIT Foundation)</li>
+                <li>Google Drive Clone using HTML & Materialize CSS (Developer Student Clubs)</li>
+              </ul>
+            </div>
+
+            <div id="work-experience" class="tab-panel" role="tabpanel" hidden>
+              <h3>Java Developer Intern — HulkHire Tech, Hyderabad</h3>
+              <p><strong>Duration:</strong> 06/05/2024 – 28/07/2024</p>
+              <ul>
+                <li>Built secure payment microservices on AWS; integrated Trustly APIs and Spring Security (HMAC SHA256, RSA).</li>
+                <li>Used Redis, ActiveMQ, and Spring JDBC for persistence and async communication.</li>
+                <li>Tech stack: Java, Spring Boot, RESTful APIs, MySQL, Git, Maven, JUnit, Agile.</li>
+              </ul>
+            </div>
+          </div>
         </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact">
+      <div class="container contact-grid">
+        <div class="contact-info">
+          <h2>Contact Me</h2>
+          <p><img src="https://cdn-icons-png.flaticon.com/128/646/646135.png" alt="" class="icon"> <a href="mailto:sumitshinde8771@gmail.com">sumitshinde8771@gmail.com</a></p>
+          <p><img src="https://cdn-icons-png.flaticon.com/128/3059/3059502.png" alt="" class="icon"> <a href="tel:+917030810201">+91 70308 10201</a></p>
+          <div class="socials">
+            <a href="https://www.linkedin.com/in/sumit-shinde-713925222" target="_blank" rel="noopener"><img src="https://cdn-icons-png.flaticon.com/512/61/61109.png" alt="LinkedIn"></a>
+            <a href="https://github.com/Sumit-Shinde-8771/Sumit-Shinde-8771.github.io" target="_blank" rel="noopener"><img src="https://cdn-icons-png.flaticon.com/512/25/25657.png" alt="GitHub"></a>
+          </div>
+        </div>
+
+        <form id="contactForm" class="contact-form" aria-label="Contact form">
+          <label>
+            <span class="sr-only">Your name</span>
+            <input type="text" name="name" placeholder="Your Name" required>
+          </label>
+
+          <label>
+            <span class="sr-only">Your email</span>
+            <input type="email" name="email" placeholder="Your Email" required>
+          </label>
+
+          <label>
+            <span class="sr-only">Message</span>
+            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+          </label>
+
+          <button type="submit" class="btn-submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Sumit Shinde — Associate Software Engineer</p>
     </div>
+  </footer>
 
+  <script>
+    // set year
+    document.getElementById('year').textContent = new Date().getFullYear();
 
-
-
-
-
-
-
-
-
-<script>
-    var tablinks = document.getElementsByClassName("tab-links");
-    var tabcontents = document.getElementsByClassName("tab-contents");
-    function opentab(tabname)
-    {
-        
-        for(tablink of tablinks){
-            tablink.classList.remove("active-link");
-        }
-        for(tabcontent of tabcontents){
-            tabcontent.classList.remove("active-tab");
-        }
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
-    }
-    function toggleProjectInfo(element) {
-    const info = element.nextElementSibling;
-    const isVisible = info.style.display === "block";
-
-    // Hide all project info sections
-    document.querySelectorAll('.project-info').forEach(project => {
-        project.style.display = 'none';
+    // Mobile nav toggle
+    const navToggle = document.getElementById('navToggle');
+    const primaryNav = document.getElementById('primaryNav');
+    navToggle.addEventListener('click', () => {
+      const expanded = navToggle.getAttribute('aria-expanded') === 'true' || false;
+      navToggle.setAttribute('aria-expanded', !expanded);
+      primaryNav.classList.toggle('open');
     });
 
-    // Toggle the clicked project's info
-    if (!isVisible) {
-        info.style.display = "block";
-    }
-}
-document.getElementById("contactForm").addEventListener("submit", function(event) {
-    event.preventDefault(); // Prevent default form submission
+    // Tabs functionality (accessible)
+    document.querySelectorAll('.tab-link').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        const targetId = btn.getAttribute('data-target');
 
-    // Collect form data
-    const formData = new FormData(this);
+        // deactivate all tabs & panels
+        document.querySelectorAll('.tab-link').forEach(tb => {
+          tb.classList.remove('active');
+          tb.setAttribute('aria-selected', 'false');
+        });
+        document.querySelectorAll('.tab-panel').forEach(panel => {
+          panel.classList.remove('active');
+          panel.hidden = true;
+        });
 
-    // Send form data to server-side script
-    fetch("send_email.php", {
-        method: "POST",
-        body: formData
-    })
-    .then(response => {
-        if (response.ok) {
-            alert("Message sent successfully.");
-            this.reset(); // Clear form inputs on success
+        // activate clicked
+        btn.classList.add('active');
+        btn.setAttribute('aria-selected', 'true');
+        const panel = document.getElementById(targetId);
+        if (panel) {
+          panel.classList.add('active');
+          panel.hidden = false;
+        }
+      });
+    });
+
+    // Project toggles (only one open at a time)
+    document.querySelectorAll('.project-title').forEach(titleBtn => {
+      titleBtn.addEventListener('click', () => {
+        const info = titleBtn.nextElementSibling;
+        const visible = info && !info.hidden;
+
+        // hide all
+        document.querySelectorAll('.project-info').forEach(pi => { pi.hidden = true; });
+
+        if (!visible && info) {
+          info.hidden = false;
+        }
+      });
+    });
+
+    // Contact form submit (keeps same backend endpoint)
+    const contactForm = document.getElementById('contactForm');
+    contactForm.addEventListener('submit', async function (evt) {
+      evt.preventDefault();
+      const formData = new FormData(contactForm);
+
+      try {
+        const res = await fetch('send_email.php', {
+          method: 'POST',
+          body: formData
+        });
+
+        if (res.ok) {
+          alert('Message sent successfully.');
+          contactForm.reset();
         } else {
-            throw new Error("Error sending message.");
+          alert('Error sending message. Please try again later.');
         }
-    })
-    .catch(error => {
-        console.error("Error:", error);
-        alert("Error sending message. Please try again later.");
+      } catch (err) {
+        console.error(err);
+        alert('Network error. Please try again later.');
+      }
     });
-});
 
-
-
-</script>
+    // Smooth scrolling for internal links
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', function(e){
+        const href = this.getAttribute('href');
+        if (href.length > 1) {
+          e.preventDefault();
+          const target = document.querySelector(href);
+          if (target) target.scrollIntoView({behavior:'smooth', block:'start'});
+          // close mobile nav if open
+          primaryNav.classList.remove('open');
+          navToggle.setAttribute('aria-expanded', 'false');
+        }
+      });
+    });
+  </script>
 </body>
 </html>
